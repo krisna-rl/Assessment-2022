@@ -57,22 +57,23 @@
               <p class="text-xs text-gray-400">3 Items = $320</p>
             </div>
           </div>
-          <div class="flex p-2">
+          <div class="flex border-b-2 p-2">
             <div class="image w-24 h-2w-24 block rounded-full">
               <img
-                src="https://www.evike.com/images/large/GP_TM_HICAPA51_S_lg.jpg"
+                src="https://p.turbosquid.com/ts-thumb/0M/lict26/3UB0AA4c/incendiaryrocketlauncherm202a1flashsetmb3dmodel001/jpg/1596856135/600x600/fit_q87/4f025b369b6412e982566c15daedb9661737bb51/incendiaryrocketlauncherm202a1flashsetmb3dmodel001.jpg"
                 alt="product"
                 class="object-cover"
               />
             </div>
             <!-- desc -->
             <div class="p-3 pl-5 flex flex-col">
-              <h3 class="font-bold text-sm">Air Soft Gun</h3>
-              <p class="text-xs text-gray-400">3 Items = $320</p>
+              <h3 class="font-bold text-sm">Rocket Launcher</h3>
+              <p class="text-xs text-gray-400">1 Items = $5200</p>
             </div>
           </div>
           <button
             class="text-sm px-2 py-3 rounded-md mt-3 bg-cyan-900 text-white block w-full m-auto"
+            onclick="alert('Checked out')"
           >
             Checkout
           </button>
@@ -97,9 +98,11 @@
 
     <!-- main -->
     <main class="mb-12">
-      <div class="container m-auto columns-3 gap-6 h-max p-3">
+      <div
+        class="container m-auto columns-1 gap-6 h-max p-3 md:columns-3 md:my-2 md:m-auto"
+      >
         <div
-          class="max-w-sm rounded overflow-hidden shadow-lg hover:shadow-md transition-shadow"
+          class="w-full rounded overflow-hidden shadow-lg hover:shadow-md transition-shadow md:w-full mb-3"
         >
           <img
             class="w-full"
@@ -116,16 +119,24 @@
             </p>
           </div>
           <div class="px-6 pt-4 pb-2 columns-2">
-            <button class="rounded-xl px-3 py-2 block w-20" title="Add to cart">
+            <button
+              class="rounded-xl px-3 py-2 block w-20 m-auto"
+              title="Add to cart"
+              onclick="alert('Added to cart')"
+            >
               <i class="fa-solid fa-cart-plus"></i>
             </button>
-            <button class="rounded-xl px-3 py-2 block w-20" title="Whitelist">
+            <button
+              class="rounded-xl px-3 py-2 block w-20 m-auto"
+              title="Whitelist"
+              onclick="alert('Added to whitelist')"
+            >
               <i class="fa-solid fa-heart"></i>
             </button>
           </div>
         </div>
         <div
-          class="max-w-sm rounded overflow-hidden shadow-lg hover:shadow-md transition-shadow"
+          class="w-full rounded overflow-hidden shadow-lg hover:shadow-md transition-shadow md:w-full mb-3"
         >
           <img
             class="w-full"
@@ -140,16 +151,24 @@
             </p>
           </div>
           <div class="px-6 pt-4 pb-2 columns-2">
-            <button class="rounded-xl px-3 py-2 block w-20" title="Add to cart">
+            <button
+              class="rounded-xl px-3 py-2 block w-20 m-auto"
+              title="Add to cart"
+              onclick="alert('Added to cart')"
+            >
               <i class="fa-solid fa-cart-plus"></i>
             </button>
-            <button class="rounded-xl px-3 py-2 block w-20" title="Whitelist">
+            <button
+              class="rounded-xl px-3 py-2 block w-20 m-auto"
+              title="Whitelist"
+              onclick="alert('Added to whitelist')"
+            >
               <i class="fa-solid fa-heart"></i>
             </button>
           </div>
         </div>
         <div
-          class="max-w-sm rounded overflow-hidden shadow-lg hover:shadow-md transition-shadow"
+          class="w-full rounded overflow-hidden shadow-lg hover:shadow-md transition-shadow md:w-full mb-3"
         >
           <img
             class="w-full"
@@ -164,10 +183,18 @@
             </p>
           </div>
           <div class="px-6 pt-4 pb-2 columns-2">
-            <button class="rounded-xl px-3 py-2 block w-20" title="Add to cart">
+            <button
+              class="rounded-xl px-3 py-2 block w-20 m-auto"
+              title="Add to cart"
+              onclick="alert('Added to cart')"
+            >
               <i class="fa-solid fa-cart-plus"></i>
             </button>
-            <button class="rounded-xl px-3 py-2 block w-20" title="Whitelist">
+            <button
+              class="rounded-xl px-3 py-2 block w-20 m-auto"
+              title="Whitelist"
+              onclick="alert('Added to whitelist')"
+            >
               <i class="fa-solid fa-heart"></i>
             </button>
           </div>
@@ -178,7 +205,7 @@
     <!-- footer -->
     <div class="footer max-w-full bg-cyan-900 text-white p-3 flex">
       <div class="flex-auto w-52">
-        <h3 class="text-bold mb-2">Terms and condition</h3>
+        <h3 class="text-bold mb-1">Terms and condition</h3>
         <p class="text-sm text-cyan-50">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
           vitae illo iste numquam quas illum est totam facilis deserunt magni
@@ -188,11 +215,17 @@
       </div>
       <div class="flex-initial w-40">
         <div class="text-sm mt-8 pl-3">
-          <h3 class="text-bold text-sm">
-            <a href="/"> Register Account </a>
+          <h3
+            class="text-bold text-sm cursor-pointer"
+            onclick="alert('Register Modal')"
+          >
+            Register Account
           </h3>
-          <h3 class="text-bold text-sm">
-            <a href="/"> Login </a>
+          <h3
+            class="text-bold text-sm cursor-pointer"
+            onclick="alert('Login Modal')"
+          >
+            Login
           </h3>
         </div>
       </div>
