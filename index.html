@@ -10,6 +10,7 @@
       src="https://kit.fontawesome.com/4567150eb4.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- toolbar -->
@@ -36,9 +37,47 @@
         Deliver to <br />
         Indonesia
       </div>
-      <button class="py-4 px-5 flex-none">
-        <i class="fa-solid fa-cart-shopping text-white"></i>
-      </button>
+      <div class="dropdown-container">
+        <button class="py-4 px-5 flex-none">
+          <i class="fa-solid fa-cart-shopping text-white"></i>
+        </button>
+        <div class="dropdown-content rounded-sm">
+          <h2 class="font-bold text-center">Current Cart</h2>
+          <div class="flex border-b-2 p-2">
+            <div class="image w-24 h-2w-24 block rounded-full">
+              <img
+                src="https://www.evike.com/images/large/GP_TM_HICAPA51_S_lg.jpg"
+                alt="product"
+                class="object-cover"
+              />
+            </div>
+            <!-- desc -->
+            <div class="p-3 pl-5 flex flex-col">
+              <h3 class="font-bold text-sm">Air Soft Gun</h3>
+              <p class="text-xs text-gray-400">3 Items = $320</p>
+            </div>
+          </div>
+          <div class="flex p-2">
+            <div class="image w-24 h-2w-24 block rounded-full">
+              <img
+                src="https://www.evike.com/images/large/GP_TM_HICAPA51_S_lg.jpg"
+                alt="product"
+                class="object-cover"
+              />
+            </div>
+            <!-- desc -->
+            <div class="p-3 pl-5 flex flex-col">
+              <h3 class="font-bold text-sm">Air Soft Gun</h3>
+              <p class="text-xs text-gray-400">3 Items = $320</p>
+            </div>
+          </div>
+          <button
+            class="text-sm px-2 py-3 rounded-md mt-3 bg-cyan-900 text-white block w-full m-auto"
+          >
+            Checkout
+          </button>
+        </div>
+      </div>
     </nav>
 
     <!-- hero -->
@@ -150,10 +189,10 @@
       <div class="flex-initial w-40">
         <div class="text-sm mt-8 pl-3">
           <h3 class="text-bold text-sm">
-            <a href=""> Register Account </a>
+            <a href="/"> Register Account </a>
           </h3>
           <h3 class="text-bold text-sm">
-            <a href=""> Login </a>
+            <a href="/"> Login </a>
           </h3>
         </div>
       </div>

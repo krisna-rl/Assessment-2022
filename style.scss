@@ -1,0 +1,21 @@
+.dropdown-container {
+  position: relative;
+  display: block;
+  .dropdown-content {
+    position: absolute;
+    // display: none;
+    width: 300px;
+    right: 10px;
+    padding: 15px;
+    z-index: 1;
+    background: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.25s linear;
+  }
+  :hover + .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+}
